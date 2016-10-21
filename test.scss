@@ -1,31 +1,115 @@
-body  {margin: 0;}
+/*SASS dependancies*/
 
-$red: red;
+@import "bourbon/bourbon";
+@import "dependancies.scss";
 
-@mixin widthHeight($width, $height){
-  width: $width;
-  height: $height;
+body, html {
+  margin: 0;
 }
 
-#redBox {
-  background-color: $red;
-  @include widthHeight(100px, 100px);
-  float:left;
+#bodyWrapper  {
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
 }
 
-#nav  {
-  width: 100%;
-  height: 30px;
-  background-color: $red;
+#navBackground {
+  @include boxes(100%, 100px, $nav, none);
+  @include position(absolute, 0 , 0 , 0 , 0);
+  z-index: -100;
+  margin: 0;
 }
 
-  #nav  {
-      ul{
-        margin: 0;
-      }
+#nav {
 
-      li {
-        display:inline;
-      }
+  @include boxes(900px, 100px, $nav, none);
+
+    ul{
+      margin: 0;
+      padding: 0;
+      padding: 25px 0 0 15px;
+    }
+
+    li{
+      display: inline;
+      margin: 15px 0 0 15px;
+      @include font($helvetica, 1em, #ffffff, uppercase, bold);
+    }
+
+  li:first-child {
+    margin-left: 0;
   }
+}
+
+#grey-panel {
+  @include boxes(100%, 300px, grey, left);
+  @include position(absolute, 448px , 0 , 0 , 0);
+  z-index: -100;
+}
+
+.image-boxes-wrap {
+  @include boxes(100%, auto, none, left);
+  margin-top:12.5px;
+}
+
+
+#image-box {
+  @include boxes(542.6px, 325px, grey, left);
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+}
+
+#boxWrapper {
+  @include boxes(457px, auto, none, right);
+}
+
+.blueBox  {
+  @include boxes(100px, 100px, $blue, right);
+  margin: 0 0 12.5px $margin-left;
+}
+
+  .pinkBox:first-child {
+    margin-left: 0;
+  }
+
+.orangeBox  {
+  @include boxes(100px, 100px, $orange, right);
+  margin: 0 0 12.5px $margin-left;
+}
+
+
+//----------jQuery-----------
+
+.click-fade {
+  @include boxes(98px, 100px, white, left);
+  margin: 0 0 0 $margin-left;
+}
+  .click-fade:first-child {
+    margin-left:0;
+  }
+
+.happy-face {
+  @include boxes (200px, auto, none, left);
+  margin-left: 20px;
+
+  img {
+    width:100%; height: auto
+  };
+}
+
+.sad-face {
+  @include boxes (200px, auto, none, left);
+  margin-left: 20px;
+
+  img {
+    width:100%; height: auto
+  };
+}
+
+
+
+
 
