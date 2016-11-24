@@ -1,0 +1,43 @@
+#header {
+  //background
+  @include boxes(100%, 80px, #ffffff, none);
+  border-top: 3px solid $orange;
+  border-bottom: 3px solid $blue;
+  position: fixed;
+
+  .content-wrapper {
+    height: inherit;
+
+    .header-logo {
+      @include boxes(195px, 35px, none, left);
+      margin-top:22px;
+    }
+  }
+  .navigation-container {
+    @include boxes(650px, 45px, none, right);
+    margin-top:16px;
+
+    ul#nav {
+      padding: 0;
+    }
+
+    li.nav {
+      display: inline;
+      padding-left:25px;
+      @include font($helvetica, 16px, grey, none, none);
+    }
+
+    li.nav:first-child {
+      padding-left: 0;
+    }
+
+    a.nav {
+      @include font($helvetica, 15px, #444449, none, none);
+      text-decoration: none;
+    }
+
+    a.nav:hover {
+      color: $orange;
+    }
+  }
+}

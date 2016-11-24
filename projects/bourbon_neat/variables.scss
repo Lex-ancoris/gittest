@@ -1,0 +1,25 @@
+$blue: rgba(39, 58, 136, 1);
+$orange: rgba(255, 153, 0, 1);
+
+@mixin font($fontFamily, $fontSize, $color, $textTransform, $weight){
+  font-family:$fontFamily;
+  font-size: $fontSize;
+  color: $color;
+  text-transform: $textTransform;
+  weight: $weight;
+}
+
+@mixin boxes($width, $height, $color, $float){
+  width: $width;
+  height: $height;
+  background-color: $color;
+  float: $float;
+}
+
+@mixin position ($position, $top, $right, $bottom, $left){
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}

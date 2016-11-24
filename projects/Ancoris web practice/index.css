@@ -1,0 +1,129 @@
+#header {
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  float: none;
+  border-top: 3px solid #ff9900;
+  border-bottom: 3px solid #273a88;
+  position: fixed; }
+  #header .content-wrapper {
+    height: inherit; }
+    #header .content-wrapper .header-logo {
+      width: 195px;
+      height: 35px;
+      background-color: none;
+      float: left;
+      margin-top: 22px; }
+  #header .navigation-container {
+    width: 650px;
+    height: 45px;
+    background-color: none;
+    float: right;
+    margin-top: 16px; }
+    #header .navigation-container ul#nav {
+      padding: 0; }
+    #header .navigation-container li.nav {
+      display: inline;
+      padding-left: 25px;
+      font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+      font-size: 16px;
+      color: grey;
+      text-transform: none;
+      weight: none; }
+    #header .navigation-container li.nav:first-child {
+      padding-left: 0; }
+    #header .navigation-container a.nav {
+      font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+      font-size: 15px;
+      color: #444449;
+      text-transform: none;
+      weight: none;
+      text-decoration: none; }
+    #header .navigation-container a.nav:hover {
+      color: #ff9900; }
+
+html, body {
+  margin: 0; }
+
+.content-wrapper {
+  width: 1120px;
+  height: 1000px;
+  background-color: none;
+  float: none;
+  margin: 0 auto; }
+
+#main-banner {
+  width: 100%;
+  height: 450px;
+  background-color: grey;
+  float: none;
+  position: relative;
+  top: 83px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("main-banner.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+  overflow: hidden; }
+  #main-banner .lighthouse {
+    width: 255px;
+    height: 600px;
+    background-color: none;
+    float: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    bottom: 0;
+    left: 950px;
+    background-image: url("lighthouse.png");
+    background-repeat: no-repeat;
+    z-index: -10;
+    overflow: hidden; }
+  #main-banner #text-generate-banner {
+    width: 580px;
+    height: 250px;
+    background-color: none;
+    float: none;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    left: 175px; }
+    #main-banner #text-generate-banner h1 {
+      font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+      font-size: 30px;
+      color: #428bca;
+      text-transform: none;
+      weight: none;
+      background-color: #ffffff;
+      display: inline-block;
+      padding: 10px 10px 10px 10px;
+      margin: 0 0 8px 0; }
+    #main-banner #text-generate-banner p {
+      font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+      font-size: 18px;
+      color: #444449;
+      text-transform: none;
+      weight: none;
+      background-color: #ffffff;
+      display: inline-block;
+      padding: 10px 10px 10px 10px;
+      margin: 0 0 8px 0; }
+
+.ancoris-solutions {
+  background-color: #fafafa;
+  width: 100%;
+  height: 450px;
+  margin-top: 120px; }
+  .ancoris-solutions .content-wrapper {
+    height: inherit; }
+    .ancoris-solutions .content-wrapper .solutions-container {
+      width: 373px;
+      height: 220px;
+      background-color: none;
+      float: left;
+      background-color: grey; }
+
+/*# sourceMappingURL=index.css.map */

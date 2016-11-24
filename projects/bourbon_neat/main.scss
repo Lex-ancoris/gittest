@@ -1,0 +1,40 @@
+$visual-grid: true;
+$visual-grid-color: #4454b2 !default;
+$visual-grid-index: back !default;
+$visual-grid-opacity: 0.1 !default;
+
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "variables.scss";
+
+body,html {
+  margin: 0;
+}
+
+.wrapper {
+
+  @include outer-container();
+
+  .box1 {
+    @include span-columns(6 of 12);
+    margin-top: 10px;
+    background-color: rgba(68, 84, 178, 0.5);
+  }
+
+  .box2 {
+    @include span-columns(6 of 12);
+    margin-top: 10px;
+    background-color: rgba(68, 84, 178, 0.5);
+  }
+
+  .box3 {
+    @include span-columns(8);
+    margin-top: 10px;
+    background-color: rgba(68, 84, 178, 0.5);
+  }
+
+
+}
+
+
+

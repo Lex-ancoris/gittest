@@ -21,3 +21,4 @@ var monthArray = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep",
 var inputMonth = document.getElementById("month").innerHTML = "The month is:" + monthArray[getMonth];
 
 var combineDates = document.getElementById("date-sentence").innerHTML = "The date today is: " + inputMonth + daysOfWeek[day] + hours + " : " + minutes;
+
